@@ -33,7 +33,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 3px 15px 4px lightgray;
+    /*box-shadow: 0 3px 15px 4px lightgray;*/
     padding: 5px;
 
     .title {

@@ -1,9 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Auth from "../views/auth";
-import User from "../views/user";
-import Admin from "../views/admin";
-import ErrorPage from "../views/error";
+import Auth from "../views/Auth";
+import Admin from "../views/Admin";
+import ErrorPage from "../views/Error";
 
 Vue.use(VueRouter);
 
@@ -16,16 +15,19 @@ const routes = [
   {
     path: "/user",
     name: "user",
-    component: User,
+    meta: { layout: "user" },
+    component: () => import("../views/User.vue"),
   },
   {
     path: "/admin",
     name: "admin",
+    meta: { layout: "admin" },
     component: Admin,
   },
   {
     path: "/*",
     name: "error",
+    meta: { layout: "error" },
     component: ErrorPage,
   },
 ];

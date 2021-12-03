@@ -1,6 +1,6 @@
 <template>
   <div class="user_main">
-    <h2>User Layout</h2>
+    <h2>User</h2>
   </div>
 </template>
 
