@@ -1,7 +1,13 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <router-view />
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+</style>
